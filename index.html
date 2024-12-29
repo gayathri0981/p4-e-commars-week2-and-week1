@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Clothing Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Women's wear</a></li>
+                <li><a href="#">men's wear</a></li>
+                <li><a href="#">children's wear</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" id="cart">Cart (0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Featured Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="https://th.bing.com/th?id=OPAC.fIVz39HZXYozAA474C474&w=160&h=213&c=17&pid=21.1" alt="Shirt">
+                <img src="https://th.bing.com/th?id=OPAC.aOmXSay89sz3yA474C474&w=160&h=213&c=17&pid=21.1" alt="Shirt">
+                <h3>Stylish Shirt</h3>
+                <p>$29.99</p>
+                <p>$35.99</p>
+                <button onclick="addToCart('Stylish Shirt', 29.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://th.bing.com/th/id/OIP.k5j1OXryLWXWkNTqK3jerAHaLH?w=184&h=276&c=7&r=0&o=5&pid=1.7" alt="Jeans">
+                <img src="https://th.bing.com/th/id/OIP.evpcUX2hoiaEf_kDg1GftwHaLH?w=184&h=276&c=7&r=0&o=5&pid=1.7" alt="Jeans">
+                <h3>Classic Jeans</h3>
+                <p>$49.99</p>
+                <p>$500.00</p>
+                <button onclick="addToCart('Classic Jeans', 49.99)">Add to Cart</button>
+                <button onclick="addToCart('royal Jeans', 500.00)">Add to Cart</button>
+            </div>
+            </div>
+            <div class="product">
+                <img src="https://www.bing.com/th?id=OPAC.aLGT7k07O%2feBSg474C474&o=5&pid=21.1&w=160&h=235&rs=1&qlt=100&dpr=1&c=8&pcl=f5f5f5"alt="Jacket">
+                <img src="https://www.bing.com/th?id=OPAC.BFHIzVCgbS8%2ffQ474C474&o=5&pid=21.1&w=160&h=235&rs=1&qlt=100&dpr=1&c=8&pcl=f5f5f5" alt="Leather Jacket">
+
+                <h3>Leather Jacket</h3>
+                <p>$89.99</p>
+                <button onclick="addToCart('Leather Jacket', 89.99)">Add to Cart</button>
+                <button onclick="addToCart('Brown Lather Jacket', 49.99)">Add to Cart</button>
+            </div>
+        </div>
+        <h2>Women's Wear</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="images/dress.jpg" alt="Elegant Dress">
+                <h3>Elegant Dress</h3>
+                <p>$59.99</p>
+                <button onclick="addToCart('Elegant Dress', 59.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/skirt.jpg" alt="Stylish Skirt">
+                <h3>Stylish Skirt</h3>
+                <p>$39.99</p>
+                <button onclick="addToCart('Stylish Skirt', 39.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/originals/c2/68/80/c26880ae7d02dd4935928f96bbbe9a89.jpg" alt="frock">
+                <img src="https://th.bing.com/th/id/OIP.xAXLSPS3T8k3ddPSwW-GuwHaKL?w=800&h=1100&rs=1&pid=ImgDetMain" alt="frock">
+                <img src="https://th.bing.com/th/id/OIP.x807E2Xu9kxsh0loF-JbFAHaLH?pid=ImgDet&w=191&h=286&c=7" alt="frock">
+                <h3>frock</h3>
+                <p>$34.99</p>
+                <button onclick="addToCart('Chic Blouse', 34.99)">Add to Cart</button>
+            </div>
+            <!-- Add more women's wear items here -->
+            <div class="product">
+                <img src="images/jumpsuit.jpg" alt="Trendy Jumpsuit">
+                <h3>Trendy Jumpsuit</h3>
+                <p>$69.99</p>
+                <button onclick="addToCart('Trendy Jumpsuit', 69.99)">Add to Cart</button>
+
+Share
+New
+Continue
+Scroll to bottom
+
+
+Chat with Code
+Message Blackbox
+
+
+Web
+
+Codebase Chat
+<main>
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <div id="total-price"></div>
+    <button onclick="checkout()">Checkout</button>
+</main>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Clothing Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
